@@ -15,7 +15,7 @@ contract Assignment7 is ERC20, Ownable {
     // Function to mint tokens
     // Fill in the visibility modifier to be external
     // Set params as to address and amount
-    function mint(address to, uint256 amount) public onlyOwner{
+    function mint(address to, uint256 amount) external onlyOwner {
         // Fill in the logic
         // call _mint function with to and amount params
         _mint(to, amount);
